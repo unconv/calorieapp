@@ -4,6 +4,8 @@ This GPT-4o powered Flask web app tells you how many calories there are in an im
 
 ## Quick Start
 
+0. Rename the `.env.sample` file into `.env` and add your OpenAI API key
+
 1. Start the server:
 
 ```sh
