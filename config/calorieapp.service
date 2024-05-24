@@ -1,0 +1,13 @@
+[Unit]
+Description=Calorie App Server
+After=network.target
+
+[Service]
+ExecStart=/srv/calorieapp/venv/bin/gunicorn server:app -w 4 -b 127.0.0.1:8000
+WorkingDirectory=/srv/calorieapp/
+Restart=on-failure
+User=gunicorn
+Group=gunicorn
+
+[Install]
+WantedBy=multi-user.target
